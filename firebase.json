@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "build",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -9,8 +9,8 @@
     "rewrites": [
       {
         "source": "**",
-        "destination": "/index.html"
-      }
-    ]
-  }
-}
+       // "destination": "/index.html"
+        "destination": "/build/index.html"
+        /*"destination": "public/dist/bundle.js"*/
+
+      } ] } }

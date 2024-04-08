@@ -1,0 +1,108 @@
+
+
+
+
+Skip to content
+This repository
+
+    Pull requests
+    Issues
+    Marketplace
+    Explore
+
+    @rebosoftware
+
+3
+37
+
+    9
+
+boo1ean/mersenne-twister
+Code
+Issues 0
+Pull requests 0
+Projects 0
+Wiki
+Insights
+Mersenne Twister pseudorandom number generator
+
+    18 commits
+    1 branch
+    0 releases
+    3 contributors
+
+    JavaScript 99.1% Makefile 0.9% 
+
+Latest commit bdb5bd1 on Dec 15, 2016 @boo1ean boo1ean Merge pull request #2 from wtgtybhertgeghgtwtg/master
+	src 	Fix space indentations 	a year ago
+	test 	Expand constructor to accept array seeds 	a year ago
+	.gitignore 	Add gitignore 	4 years ago
+	.travis.yml 	Add travis config 	4 years ago
+	Makefile 	Add tests for generator 	4 years ago
+	README.md 	Update readme, add travis build status, bump 1.0.1 	4 years ago
+	package.json 	Add `files` to `package.json`. 	10 months ago
+README.md
+Pseudorandom number generator Build Status
+
+Mersenne Twister pseudorandom number generator.
+
+Origin source (generator interface was changed)
+
+Algorithm - http://en.wikipedia.org/wiki/Mersenne_twister
+Installation
+
+$ npm install mersenne-twister
+
+Usage
+
+var MersenneTwister = require('mersenne-twister');
+var generator = new MersenneTwister();
+
+// Generates a random number on [0,1) real interval (same interval as Math.random)
+generator.random();
+
+// [0, 4294967295]
+generator.random_int();
+
+// [0,1]
+generator.random_incl();
+
+// (0,1)
+generator.random_excl();
+
+// [0,1) with 53-bit resolution
+generator.random_long();
+
+// [0, 2147483647]
+generator.random_int31();
+
+Seeding
+
+If you want to use a specific seed in order to get a repeatable random sequence, pass an integer into the constructor:
+
+var generator = new MersenneTwister(123);
+
+and that will always produce the same random sequence.
+
+Also you can do it on existing generator instance:
+
+generator.init_seed(123);
+
+License
+
+See source
+
+    © 2017 GitHub, Inc.
+    Terms
+    Privacy
+    Security
+    Status
+    Help
+
+    Contact GitHub
+    API
+    Training
+    Shop
+    Blog
+    About
+

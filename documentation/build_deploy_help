@@ -1,0 +1,46 @@
+reactpoker
+
+---------to run
+cd \users\reboadmin\reactpoker
+npm start
+
+---------------
+
+----------to deploy to iis ---------
+cd \users\reboadmin\reactpoker
+
+npm run build
+(this will make a "build" directory with paths slightly off)
+
+copy files from buid directory to c:\apps\reactpoker
+
+take the "/" off the static js ref below
+
+<script type="text/javascript" src="static/js/main.9d3250f2.js"></script></body></html>
+--------------------
+
+
+------------------------
+
+SpBu7079
+
+START POWER SHELL FROM TASK BAR
+
+start webbrick on diff port
+(railspoker.com points here)
+----------------------------
+
+c:\sites\railspoker\ rails s -b 192.168.1.155 -p 8079
+
+
+commit, push and pull
+---------------------
+cd \users\rebosdmin\Documents\GitHub\railspoker
+git commit -am "message"
+git push
+git pull
+
+use: c:\jenkins\d_fromgit 
+ to: copy to sites\railspoker
+
+

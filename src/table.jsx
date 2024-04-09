@@ -180,11 +180,11 @@ export class Table extends React.Component {
     return (
       <div id="dtable" className="">
 
-        <div>[{this.state.dealerWinCount}] {elDealerWinner}{dealerHandRank}</div>
+        <div><font color="white">Wins: {this.state.dealerWinCount} - {elDealerWinner}{dealerHandRank}</font></div>
         {elDealer}<span></span>
         <p id="dh-ph-horiz"></p>
 
-        {elPlayer}<span>[{this.state.playerWinCount}] {elPlayerWinner}{playerHandRank}</span>
+            {elPlayer}<span><font color="white">Wins: {this.state.playerWinCount} - {elPlayerWinner}{playerHandRank}</font></span>
         
         <div style={cntr}>
           <span>
